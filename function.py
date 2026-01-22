@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 def abhishek():
     print("pandey")
@@ -29,3 +30,36 @@ MyFuction("abhishek")
 def MyFuctions(cricketer):
     print(cricketer+  " batsman  ")
 MyFuctions("  rahul")
+=======
+
+def abhishek():
+    print("pandey")
+    print("abhi")
+    # fuction is reuseble
+abhishek()
+abhishek()
+abhishek() 
+
+def pandey(name,Address):
+    # print("hello pandey") 
+    print(name+Address)
+    return 9,"bye pandey "
+a=pandey("Abhishek  ",    "noida")
+print(a)
+
+ #function arguments
+ 
+def abhishek( roll,game="Cricket"):
+    print(roll,game)
+abhishek("allrounder")    
+ 
+    
+
+def MyFuction(cricketer):
+    print(cricketer+ "  allrounder")
+MyFuction("abhishek")
+
+def MyFuctions(cricketer):
+    print(cricketer+  " batsman  ")
+MyFuctions("  rahul")
+>>>>>>> c9e4d9ac9e57fb19e93c2ec5071b4c1a76c21390
