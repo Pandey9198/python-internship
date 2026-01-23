@@ -1,31 +1,36 @@
-students = []
+import threading
+import time
+class A(thread):
 
-while True:
-    print("\n1. Add Student")
-    print("2. Show All Students")
-    print("3. Exit")
+    def run(self):
+        for i in range(3):
+            print("Thread A running...")
+            time.sleep(1)
+class B(thread):
 
-    choice = input("Enter choice: ")
+    def run(self):
+        for i in range(3):
+            print("Thread B running...")
+            time.sleep(1)
+a = A()
+b = B()
+a.start()
+b.start() 
+b.join()
+a.join()
+# import threading
+def task():
+#     for i in range(3):
+#         print("Task running...")
+#         time.sleep(1)
 
-    if choice == "1":
-        name = input("Enter name: ")
-        roll = int(input("Enter roll no: "))
-        marks = int(input("Enter marks: "))
+# t1 = threading.Thread(target=task)
+# t2 = threading.Thread(target=task)
 
-        s = Student(name, roll, marks)
-        students.append(s)
-        print("Student Added Successfully!")
+# t1.start()
+# t2.start()
 
-    elif choice == "2":
-        for s in students:
-            s.show_name()
-            s.show_details()
-            print("Grade:", s.grade())
-            print("-----------")
+# t1.join()
+# t2.join()
 
-    elif choice == "3":
-        print("Thank You!")
-        break
-
-    else:
-        print("Invalid choice")
+# print("Done")

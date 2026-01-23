@@ -1,7 +1,7 @@
-x=5
+
 def fun(x):
     return x +10
-print(fun (x))
+print(fun (5))
 
 fun = lambda x: x +10
 print(fun(5))
@@ -18,4 +18,3 @@ lst = ["Abhishek","pandey","bhopal","mcu"]
 
 lst = sorted(lst, key=lambda x: len(x))
 print(lst)  
-
