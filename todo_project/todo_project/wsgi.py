@@ -1,10 +1,13 @@
 """
 WSGI config for todo_project project.
+<<<<<<< HEAD
 
 It exposes the WSGI callable as a module-level variable named ``application``.
 
 For more information on this file, see
 https://docs.djangoproject.com/en/4.2/howto/deployment/wsgi/
+=======
+>>>>>>> 57d8d5c (Add todo_project folder)
 """
 
 import os
